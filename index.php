@@ -12,7 +12,10 @@ Facciamo attenzione all’organizzazione del codice, suddividendolo in appositi 
 Possiamo ad esempio organizzare il codice:
 creando un file dedicato ai dati (tipo le array di oggetti) che potremmo chiamare db.php
 mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi in una cartella dedicata che possiamo chiamare Models/
-organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati. */
+organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.
+Bonus 2 (opzionale)
+Modificare la classe Movie in modo che accetti piú di un genere.
+Confermate lettura come al solito e buon divertimento :baby-yoda: */
 
 /* class Movie
 {
