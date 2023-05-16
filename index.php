@@ -101,23 +101,25 @@ include __DIR__ . '/db.php';
                             </div>
                             <div class="card-body">
                                 <span>
-                                    <strong> Descrizione :</strong>
+                                    <strong>Descrizione :</strong>
                                     <?php echo ($movie->description) ?>
                                 </span> <br>
                                 <span>
-                                    <strong> Regista :</strong>
+                                    <strong>Regista :</strong>
                                     <?php echo ($movie->director) ?>
                                 </span> <br>
                                 <span>
-                                    <strong> Genere :</strong>
-                                    <?php echo ($movie->genre) ?>
+                                    <strong>Genere :</strong>
+                                    <?php echo ($movie->genre->name) ?>
+                                    <strong>Età minima:</strong>
+                                    <?php echo ($movie->genre->min_age) ?>
                                 </span> <br>
                                 <span>
-                                    <strong> Durata :</strong>
+                                    <strong>Durata :</strong>
                                     <?php echo ($movie->duration) ?>
                                 </span> <br>
                                 <span>
-                                    <strong> Anno di produzione :</strong>
+                                    <strong>Anno di produzione :</strong>
                                     <?php echo ($movie->year) ?>
                                 </span> <br>
                             </div>

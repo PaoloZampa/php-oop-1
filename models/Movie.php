@@ -10,7 +10,7 @@ class Movie
     public $director;
     public $duration;
 
-    public function __construct(string $title, string $description, string $genre, int $year, string $director, string $duration)
+    public function __construct(string $title, string $description, Genre $genre, int $year, string $director, string $duration)
     {
         $this->title = $title;
         $this->description = $description;
@@ -30,5 +30,19 @@ class Movie
          echo "Durata: " . $this->duration . "<br>";
      } */
 
+
+}
+
+class Genre
+{
+    public $name;
+    public $min_age;
+
+    public function __construct(string $name, int $min_age)
+    {
+        $this->name = $name;
+        $this->min_age = $min_age;
+
+    }
 
 }
