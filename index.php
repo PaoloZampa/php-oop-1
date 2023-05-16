@@ -95,14 +95,31 @@ include __DIR__ . '/db.php';
                     <div class="col-6 p-4">
                         <div class="card">
                             <div class="card-header">
-                                <h2>
+                                <h3 class="text-center">
                                     <?php echo ($movie->title) ?>
-                                </h2>
+                                </h3>
                             </div>
                             <div class="card-body">
                                 <span>
-
-                                </span>
+                                    <strong> Descrizione :</strong>
+                                    <?php echo ($movie->description) ?>
+                                </span> <br>
+                                <span>
+                                    <strong> Regista :</strong>
+                                    <?php echo ($movie->director) ?>
+                                </span> <br>
+                                <span>
+                                    <strong> Genere :</strong>
+                                    <?php echo ($movie->genre) ?>
+                                </span> <br>
+                                <span>
+                                    <strong> Durata :</strong>
+                                    <?php echo ($movie->duration) ?>
+                                </span> <br>
+                                <span>
+                                    <strong> Anno di produzione :</strong>
+                                    <?php echo ($movie->year) ?>
+                                </span> <br>
                             </div>
                         </div>
                     </div>
