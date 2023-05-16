@@ -72,7 +72,7 @@ include __DIR__ . '/db.php';
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Movies list</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -80,6 +80,8 @@ include __DIR__ . '/db.php';
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -89,11 +91,14 @@ include __DIR__ . '/db.php';
 
 
         <div class="container">
-            <div class="row py-5 ">
+
+            <h1 class="text-center pt-5">MOVIES LIST</h1>
+
+            <div class="row py-4">
 
                 <?php foreach ($movies as $movie): ?>
                     <div class="col-6 p-4">
-                        <div class="card">
+                        <div class="card shadow">
                             <div class="card-header">
                                 <h3 class="text-center">
                                     <?php echo ($movie->title) ?>

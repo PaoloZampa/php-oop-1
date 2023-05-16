@@ -1,0 +1,10 @@
+main{
+    height: 100%;
+    background-color: rgba(40, 39, 40, 0.34);
+}
+
+h1{
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgb(122, 38, 158);
+}
