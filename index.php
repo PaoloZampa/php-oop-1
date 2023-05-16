@@ -43,3 +43,11 @@ class Movie
 
 $movie_1 = new Movie('Avatar', 'Un bel film', 'Azione', '2012', 'James Cameron', '180 min');
 $movie_2 = new Movie('Signore degli Anelli', 'Un bellissimo film', 'Fantasy', '2007', 'Quentin Tarantino', '178 min');
+
+//var_dump($movie_1, $movie_2);
+
+$movie_1->printInfo();
+echo "<br>";
+$movie_2->printInfo();
+
+?>
