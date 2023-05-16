@@ -8,7 +8,7 @@ all'interno della classe è definito almeno un metodo
 vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà.
 Tra le varie proprietá, la classe Movie 'ha un' genere (sfruttare il concetto di composizione). */
 
-class movie
+class Movie
 {
 
     public $title;
@@ -18,7 +18,7 @@ class movie
     public $director;
     public $duration;
 
-    public function __construct($title, $description, $genre, $year, $director, $duration)
+    public function __construct(string $title, string $description, string $genre, int $year, string $director, string $duration)
     {
         $this->title = $title;
         $this->description = $description;
@@ -28,6 +28,18 @@ class movie
         $this->duration = $duration;
 
     }
+    public function printInfo()
+    {
+        echo "Titolo: " . $this->title . "<br>";
+        echo "Descrizione: " . $this->description . "<br>";
+        echo "Genere: " . $this->genre . "<br>";
+        echo "Anno: " . $this->year . "<br>";
+        echo "Regista: " . $this->director . "<br>";
+        echo "Durata: " . $this->duration . "<br>";
+    }
 
 
 }
+
+$movie_1 = new Movie('Avatar', 'Un bel film', 'Azione', '2012', 'James Cameron', '180 min');
+$movie_2 = new Movie('Signore degli Anelli', 'Un bellissimo film', 'Fantasy', '2007', 'Quentin Tarantino', '178 min');
