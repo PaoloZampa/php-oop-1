@@ -67,6 +67,7 @@ echo "<br>";
 $movie_2->printInfo(); */
 
 include __DIR__ . '/models/Movie.php';
+include __DIR__ . '/models/Genre.php';
 include __DIR__ . '/db.php';
 
 ?>

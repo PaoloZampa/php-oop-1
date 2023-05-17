@@ -33,7 +33,7 @@ class Movie
 
 }
 
-class Genre
+/* class Genre
 {
     public $name;
     public $min_age;
@@ -45,4 +45,4 @@ class Genre
 
     }
 
-}
+} */
