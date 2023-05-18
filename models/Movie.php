@@ -18,7 +18,6 @@ class Movie
         $this->year = $year;
         $this->director = $director;
         $this->duration = $duration;
-
     }
     /*  public function printInfo()
      {
@@ -29,8 +28,6 @@ class Movie
          echo "Regista: " . $this->director . "<br>";
          echo "Durata: " . $this->duration . "<br>";
      } */
-
-
 }
 
 /* class Genre

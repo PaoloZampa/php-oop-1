@@ -9,7 +9,5 @@ class Genre
     {
         $this->name = $name;
         $this->min_age = $min_age;
-
     }
-
 }
